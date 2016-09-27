@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" href="_styles/style.css"/>
+    <script src="_scripts/script.js" async="async"></script>
+</head>
+<body>
+
+<header>
+    <figure id="menuButton">&#9776;</figure>
+    <figure id="logo"><a href="/"><img src="_img/logo.gif" alt="Indigo Logo"/></a></figure>
+    <figure id="avatar">
+        <!-- todo: insert real avater address-->
+        <!-- todo: insert real user name as "alt" -->
+        <img src="_img/_avatars/1.gif" alt="..."/>
+    </figure>
+    <form action="http://google.com" method="get" id="search">
+        <input name="q" placeholder="Search"/>
+    </form>
+</header>
+
+<aside>
+    <nav>
+        <ul>
+            <li><a href="bookmarks/1/">My Bookmarks</a></li>
+            <li><a href="projects/">All Projects</a></li>
+            <li class="selected expanded">
+                <a href="projects/">VI Project</a>
+                <ul>
+                    <li class="selected expanded">
+                        <a href="projects/11112222/">11112222</a>
+                        <ul>
+                            <li class="selected expanded">
+                                <a href="projects/11112222/Table/">Table</a>
+                                <ul>
+                                    <li class="open selected"><a href="projects/11112222/Table/1/">0001</a></li>
+                                    <li class="signing"><a href="projects/11112222/Table/2/">0002</a></li>
+                                    <li class="completed"><a href="projects/11112222/Table/3/">0003</a></li>
+                                    <li class="submitFail"><a href="projects/11112222/Table/4/">0004</a></li>
+                                    <li class="archived"><a href="projects/11112222/Table/5/">0005</a></li>
+                                    <li class="submitFail"><a href="projects/11112222/Table/6/">0006</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="projects/1/">My Project</a></li>
+            <li><a href="projects/new/">New Project</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<nav id="toolbox">
+    <ul>
+        <li>
+            <ul>
+                <li><a href="#" id="upArrow"></a></li>
+                <li><a href="#" id="cog"></a></li>
+                <li><a href="#" id="squares"></a></li>
+                <li><a href="#" id="question"></a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><a href="#" id="new_document"></a></li>
+                <li><a href="#" id="copy"></a></li>
+                <li><a href="#" id="disk"></a></li>
+                <li><a href="#" id="folder"></a></li>
+                <li><a href="#" id="save"></a></li>
+                <li><a href="#" id="print"></a></li>
+                <li><a href="#" id="projectSearch"></a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><a href="#" id="profile"></a></li>
+                <li><a href="#" id="settings"></a></li>
+                <li><a href="/" id="home"></a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<section>
+
+    <header>
+        <a href="#tab-1-1">template</a>
+        <a href="#tab-1-2" class="selected">new template</a>
+    </header>
+
+    <!-- Tabs -->
+
+    <div id="tab-1-1" class="scroller"></div>
+    <section id="templateTab" class="item">
+        <!--<h1>template</h1>-->
+        <!-- todo: Add content -->
+        123
+    </section>
+
+    <div id="tab-1-2" class="scroller"></div>
+    <section id="newTemplateTab" class="item selected">
+        <!--<h1>new template</h1>-->
+
+        <form action="/search/" method="get">
+            <input name="filter" placeholder="Name"/>
+        </form>
+
+        <article>
+            <header>
+                <h1>Components</h1>
+            </header>
+            <ul>
+                <li>
+                    <form action="/filter/" method="get">
+                        <input name="criteria" placeholder="Search by name or description"/>
+                    </form>
+                </li>
+                <li>
+                    <h1>Concept Details</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Reaction Details</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Product Batch Summary</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Product Batch Details</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Reaction Scheme</h1>
+                    <p>Description</p>
+                </li>
+                <li><!-- todo: fill the list -->
+                    <h1>...</h1>
+                    <p>Description</p>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <header>
+                <h1>Template builder</h1>
+                <button>Create New Tab</button>
+            </header>
+            <ul id="tabs">
+                <li>
+                    Experimental
+                    <ul>
+                        <li>
+                            <h1>Reaction Details</h1>
+                            <p>Description</p>
+                        </li>
+                        <li>
+                            <h1>Reaction Scheme</h1>
+                            <p>Description</p>
+                        </li>
+                        <li>
+                            <h1>Stoichiometry Table</h1>
+                            <p>Description</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Batches
+                    <ul>
+                        <li>
+                            <h1>Concept Details</h1>
+                            <p>Description</p>
+                        </li>
+                        <li>
+                            <h1>Product Batch Details</h1>
+                            <p>Description</p>
+                        </li>
+                        <li><!-- todo: fill the list -->
+                            <h1>...</h1>
+                            <p>Description</p>
+                        </li>
+                    </ul>
+                </li>
+                <!-- todo: make sure if list is fill -->
+            </ul>
+        </article>
+
+        <section>
+            <header><h1>Show preview</h1></header>
+            <section>
+                <header><h1>Experimental</h1></header>
+                <article>
+                    <header><h1>Reaction Details</h1></header>
+                    <form>
+                        <!--<label for="experim-subj-title">Experimental Subject/Title</label>-->
+                        <input id="experim-subj-title"/>
+
+                    </form>
+                </article>
+                <article><h1>Reaction Scheme</h1></article>
+                <article><h1>Stoicheometry Table</h1></article>
+            </section>
+            <section>
+                <header><h1>Batches</h1></header>
+                <!--todo: fill content -->
+            </section>
+
+        </section>
+    </section>
+
+</section>
+
+<!--<footer>-->
+<!--(с) Copyright EPAM Systems 2016-->
+<!--</footer>-->
+
+</body>
+</html>

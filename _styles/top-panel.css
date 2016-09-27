@@ -1,0 +1,58 @@
+body > header {
+    position: relative;
+    padding-bottom: 60px;
+    min-width: 467px;
+    background-color: #3f51b5;
+}
+
+body > header > * { display: inline-block; }
+
+#menuButton {
+    position: absolute;
+    padding: 18px 19px; /*todo: разобраться почему размеры не совпадают должно быть 22x18*/
+    background-color: #424242;
+    font-size: 18px;
+    color: #fff;
+}
+
+#logo {
+    padding: 11px 26px 8px 71px;
+    background-color: #283593;
+}
+
+#menuButton,
+#logo { float: left; }
+
+#search {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 192px;
+    min-width: 100px; /* todo: make sure min-width */
+}
+
+#search > input {
+    margin: 14px 15px;
+    padding: 11px 20px;
+    max-width: 192px;
+    min-width: 100px; /* todo: make sure min-width */
+    height: 13px;
+    background-color: #283593;
+    border: 0;
+    border-radius: 13px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 10pt;
+    color: #5c6bc0;
+}
+
+/*#search > input:before {*/
+/*content: "h";*/
+/*font-family: 'FontAwesome';*/
+/*position: absolute;*/
+/*left: 20px;*/
+/*}*/
+
+#search,
+#avatar { float: right; }
+
+#avatar { margin: 11px 8px 6px 0; }
